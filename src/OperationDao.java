@@ -11,8 +11,8 @@ public class OperationDao {
         try {
             this.connection = DriverManager.getConnection(
                     "jdbc:postgresql://localhost:5432/postgres",
-                    "postgres",
-                    "1234");
+                    "user",
+                    "password");
         } catch (SQLException e) {
             System.out.println("Error occurred during connection");
         }
